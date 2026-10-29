@@ -1,0 +1,289 @@
+<title>WinLite 11 Downloads</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a soft wallpaper-style backdrop, one centred column, and a floating pill nav at the bottom like a taskbar. */
+:root {
+  --bg: #eaf0fb;
+  --wash-a: #bfe0ff;
+  --wash-b: #d9d2ff;
+  --wash-c: #ffe3d1;
+  --surface: #ffffff;
+  --surface-2: #f3f6fd;
+  --fg: #121a33;
+  --muted: #55607f;
+  --line: #d5ddf0;
+  --accent: #0a62d0;
+  --accent-fg: #ffffff;
+  --code-bg: #101729;
+  --code-fg: #dbe6ff;
+  --warn-bg: #fff3dc;
+  --warn-fg: #6b4a00;
+  --shadow: 0 1px 2px rgba(18,26,51,.06), 0 12px 32px rgba(18,26,51,.08);
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1020; --wash-a: #14335f; --wash-b: #2a2060; --wash-c: #4a2a2a;
+    --surface: #141b33; --surface-2: #1a2342; --fg: #e7ecfb; --muted: #9aa6c9;
+    --line: #28325a; --accent: #6aa8ff; --accent-fg: #07101f;
+    --code-bg: #070b17; --code-fg: #cfdcff; --warn-bg: #3a2c0c; --warn-fg: #ffd98a;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 32px rgba(0,0,0,.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1020; --wash-a: #14335f; --wash-b: #2a2060; --wash-c: #4a2a2a;
+  --surface: #141b33; --surface-2: #1a2342; --fg: #e7ecfb; --muted: #9aa6c9;
+  --line: #28325a; --accent: #6aa8ff; --accent-fg: #07101f;
+  --code-bg: #070b17; --code-fg: #cfdcff; --warn-bg: #3a2c0c; --warn-fg: #ffd98a;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 12px 32px rgba(0,0,0,.35);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background:
+    radial-gradient(60rem 34rem at 12% -8%, var(--wash-a), transparent 70%),
+    radial-gradient(50rem 30rem at 95% 4%, var(--wash-b), transparent 70%),
+    radial-gradient(46rem 28rem at 60% 38rem, var(--wash-c), transparent 72%),
+    var(--bg);
+  color: var(--fg);
+  font: 400 1rem/1.6 var(--body);
+  padding-block: 0 7rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main { max-width: 56rem; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--display); text-wrap: balance; line-height: 1.1; margin: 0; }
+h1 { font-size: clamp(2.8rem, 9vw, 5.2rem); font-weight: 800; letter-spacing: -.03em; }
+h2 { font-size: clamp(1.6rem, 4vw, 2.1rem); font-weight: 700; letter-spacing: -.02em; }
+h3 { font-size: 1.1rem; font-weight: 700; }
+p { margin: 0; }
+a { color: var(--accent); }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+.hero { padding-block: clamp(3rem, 9vw, 6rem) 2.5rem; display: grid; gap: 1.4rem; }
+.tag { font: 500 .8rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.lede { font-size: clamp(1.1rem, 2.6vw, 1.35rem); color: var(--muted); max-width: 38rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: .4rem; }
+.btn {
+  display: inline-flex; flex-direction: column; gap: .1rem; text-decoration: none;
+  padding: .85rem 1.4rem; border-radius: 14px; font-weight: 600; min-width: 13rem;
+  border: 1px solid var(--line); background: var(--surface); color: var(--fg); box-shadow: var(--shadow);
+}
+.btn small { font: 400 .8rem var(--mono); opacity: .8; }
+.btn.primary { background: var(--accent); color: var(--accent-fg); border-color: transparent; }
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+.chips li { font: 500 .78rem var(--mono); padding: .25rem .65rem; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); color: var(--muted); }
+
+section { padding-block: 2.2rem; display: grid; gap: 1.1rem; scroll-margin-top: 1rem; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); padding: clamp(1rem, 3vw, 1.6rem); min-width: 0; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1rem; }
+.grid2 > * { min-width: 0; }
+
+.scroll-x { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font: 500 .75rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; white-space: nowrap; }
+td.val { font-family: var(--mono); font-size: .88rem; }
+
+ol.steps { margin: 0; padding-left: 1.3rem; display: grid; gap: .5rem; }
+ul.plain { margin: 0; padding-left: 1.2rem; display: grid; gap: .4rem; }
+
+.code { position: relative; background: var(--code-bg); color: var(--code-fg); border-radius: 12px; padding: 1rem 3.4rem 1rem 1rem; overflow-x: auto; }
+.code pre { margin: 0; font: 400 .85rem/1.6 var(--mono); white-space: pre; }
+.copy {
+  position: absolute; top: .55rem; right: .55rem; font: 500 .72rem var(--mono); cursor: pointer;
+  border: 1px solid rgba(255,255,255,.2); background: rgba(255,255,255,.08); color: var(--code-fg);
+  border-radius: 8px; padding: .3rem .55rem;
+}
+.hash { display: grid; gap: .3rem; }
+.hash b { font: 500 .75rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.hash code { font: 400 .8rem var(--mono); word-break: break-all; }
+.hash .row { display: flex; gap: .6rem; align-items: flex-start; flex-wrap: wrap; }
+.mini { cursor: pointer; font: 500 .75rem var(--mono); border: 1px solid var(--line); background: var(--surface-2); color: var(--fg); border-radius: 8px; padding: .25rem .6rem; }
+
+.note { background: var(--warn-bg); color: var(--warn-fg); border-radius: 14px; padding: 1rem 1.2rem; }
+.note strong { font-family: var(--display); }
+code.i { font: 400 .88em var(--mono); background: var(--surface-2); padding: .1em .4em; border-radius: 6px; }
+
+footer { padding-block: 2rem; color: var(--muted); font-size: .88rem; display: grid; gap: .5rem; }
+
+nav.dock {
+  position: fixed; left: 50%; transform: translateX(-50%);
+  bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  display: flex; gap: .2rem; padding: .35rem; border-radius: 99px;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--line); box-shadow: var(--shadow); max-width: calc(100vw - 24px); z-index: 5;
+}
+nav.dock a { text-decoration: none; color: var(--fg); font-weight: 600; font-size: .88rem; padding: .5rem .85rem; border-radius: 99px; white-space: nowrap; }
+nav.dock a:hover { background: var(--surface-2); }
+@media (max-width: 460px) { nav.dock a { padding: .5rem .6rem; font-size: .8rem; } .btn { min-width: 0; width: 100%; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn:hover { transform: none; } }
+</style>
+
+<main>
+  <header class="hero">
+    <p class="tag">Hobby operating system &middot; v0.1 alpha</p>
+    <h1>WinLite 11</h1>
+    <p class="lede">A tiny desktop OS written from scratch in C and assembly. It boots from a 12 MB disc image and runs in VirtualBox.</p>
+    <div class="actions">
+      <a class="btn primary" id="dl-iso" href="winlite11.iso">Download ISO <small>winlite11.iso &middot; 12.4 MB</small></a>
+      <a class="btn" id="dl-src" href="winlite11-src.zip">Source code <small>winlite11-src.zip &middot; 1.3 MB</small></a>
+    </div>
+    <ul class="chips">
+      <li>32-bit x86</li><li>GRUB 2 &middot; Multiboot2</li><li>1024&times;768 &middot; 32-bit colour</li><li>No external libraries</li>
+    </ul>
+  </header>
+
+  <section id="download">
+    <h2>Download</h2>
+    <div class="grid2">
+      <div class="panel hash">
+        <h3>winlite11.iso</h3>
+        <p>The whole OS. Boot it in a virtual machine, or write it to a USB stick.</p>
+        <b>SHA-256</b>
+        <div class="row"><code id="h-iso">440047614857abaab5719d012d355da79af46f8afee1d84fc746f9b8fb9cdf57</code><button class="mini" data-copy="h-iso">Copy</button></div>
+      </div>
+      <div class="panel hash">
+        <h3>winlite11-src.zip</h3>
+        <p>Every source file, the build script and the tests. Only needed if you want to read or change the code.</p>
+        <b>SHA-256</b>
+        <div class="row"><code id="h-src">ef00742a1080cdafc209e1b428603a1df1cd8230aeab1346f48c402e6b7daf8f</code><button class="mini" data-copy="h-src">Copy</button></div>
+      </div>
+    </div>
+    <div class="note"><strong>Alpha release.</strong> WinLite 11 boots and runs in VirtualBox. It has not been tested on real hardware, so treat it as a VM project for now.</div>
+  </section>
+
+  <section id="run">
+    <h2>Run it in VirtualBox</h2>
+    <div class="panel">
+      <p>Create a new machine with these settings. The ones marked <strong>must</strong> are what make it boot and give you a working pointer.</p>
+      <div class="scroll-x">
+      <table>
+        <thead><tr><th>Setting</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Type / Version</td><td class="val">Other / Other/Unknown (64-bit)</td></tr>
+          <tr><td>Memory</td><td class="val">1024 MB or more</td></tr>
+          <tr><td>Hard disk</td><td class="val">None needed</td></tr>
+          <tr><td>Enable EFI</td><td class="val">Off (must). Windows 11 as the OS type turns it on by itself.</td></tr>
+          <tr><td>TPM version</td><td class="val">None</td></tr>
+          <tr><td>Pointing device</td><td class="val">PS/2 Mouse (must)</td></tr>
+          <tr><td>Graphics controller</td><td class="val">VBoxVGA, 32 MB or more, 3D off</td></tr>
+          <tr><td>Optical drive</td><td class="val">winlite11.iso</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <ol class="steps" style="margin-top:1rem">
+        <li>Start the machine. GRUB shows for about a second, then the splash screen, then the desktop.</li>
+        <li>Click inside the window to capture the mouse. Press <strong>Right Ctrl</strong> to release it.</li>
+        <li>Open the Start menu with the button or the Windows key, and just type to search.</li>
+      </ol>
+    </div>
+    <div class="panel">
+      <h3>Try these in the Terminal</h3>
+      <div class="code" style="margin-top:.7rem"><pre>about
+help
+theme dark
+echo hello &gt; note.txt
+cat note.txt</pre><button class="copy" data-copy-pre>Copy</button></div>
+      <p style="margin-top:.8rem;color:var(--muted)">Files live in memory only and disappear on restart.</p>
+    </div>
+  </section>
+
+  <section id="pc">
+    <h2>On a real PC</h2>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Steps</h3>
+        <ol class="steps" style="margin-top:.6rem">
+          <li>Use a spare USB stick. Everything on it is erased.</li>
+          <li>Write the ISO to it with Rufus (choose <strong>DD Image mode</strong>) or balenaEtcher.</li>
+          <li>Open the boot menu (often F12, F10 or Esc) and pick the stick.</li>
+          <li>Boot in <strong>Legacy / BIOS / CSM</strong> mode, not UEFI.</li>
+        </ol>
+      </div>
+      <div class="panel">
+        <h3>What to expect</h3>
+        <ul class="plain" style="margin-top:.6rem">
+          <li>UEFI-only PCs can't boot it.</li>
+          <li>It reads the keyboard and mouse as PS/2. A USB mouse works only if the BIOS offers Legacy USB Support.</li>
+          <li>It has no disk driver, so it never touches the PC's drives.</li>
+          <li>Untested on real hardware. If it fails, a black screen is the likely result.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="source">
+    <h2>Build from source</h2>
+    <div class="panel">
+      <p>On Ubuntu or Windows with WSL (Ubuntu). It produces <code class="i">winlite11.iso</code> in the project folder.</p>
+      <div class="code" style="margin-top:.8rem"><pre>sudo apt update
+sudo apt install -y build-essential grub-pc-bin grub-common xorriso mtools python3 unzip
+unzip winlite11-src.zip &amp;&amp; cd winlite11
+chmod +x build.sh &amp;&amp; ./build.sh</pre><button class="copy" data-copy-pre>Copy</button></div>
+      <p style="margin-top:.8rem;color:var(--muted)">Layout: <code class="i">boot/</code> <code class="i">kernel/</code> <code class="i">drivers/</code> <code class="i">gui/</code> <code class="i">fs/</code> <code class="i">apps/</code>. The README in the zip covers tests and the roadmap.</p>
+    </div>
+  </section>
+
+  <section id="limits">
+    <h2>Known limits</h2>
+    <div class="panel">
+      <ul class="plain">
+        <li>PS/2 keyboard and mouse only. No USB, no scroll wheel, no tablet pointer.</li>
+        <li>Everything runs inside the kernel: no user mode and no separate processes.</li>
+        <li>No disk driver. The file system lives in RAM.</li>
+        <li>Fixed 1024&times;768 screen. Software drawing, so dragging can feel slow on a slow host.</li>
+        <li>ASCII text only. No networking or sound.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>WinLite 11 is an independent hobby project. All code, icons, the font and the wallpaper are original. It is not affiliated with or endorsed by Microsoft. &ldquo;Windows&rdquo; is a trademark of Microsoft.</p>
+    <p>Version 0.1 alpha &middot; Provided as is, with no warranty.</p>
+  </footer>
+</main>
+
+<nav class="dock" aria-label="Sections">
+  <a href="#download">Download</a><a href="#run">Run</a><a href="#pc">Real PC</a><a href="#source">Source</a>
+</nav>
+
+<script>
+function flash(btn, text) {
+  var old = btn.getAttribute('data-label') || btn.textContent;
+  btn.setAttribute('data-label', old);
+  btn.textContent = text;
+  setTimeout(function () { btn.textContent = old; }, 1400);
+}
+function selectNode(node) {
+  var r = document.createRange(); r.selectNodeContents(node);
+  var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+}
+function copyFrom(node, btn) {
+  var text = node.textContent.trim();
+  try {
+    navigator.clipboard.writeText(text).then(
+      function () { flash(btn, 'Copied'); },
+      function () { selectNode(node); flash(btn, 'Selected'); }
+    );
+  } catch (e) { selectNode(node); flash(btn, 'Selected'); }
+}
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () { copyFrom(document.getElementById(b.getAttribute('data-copy')), b); });
+});
+document.querySelectorAll('[data-copy-pre]').forEach(function (b) {
+  b.addEventListener('click', function () { copyFrom(b.parentNode.querySelector('pre'), b); });
+});
+</script>
